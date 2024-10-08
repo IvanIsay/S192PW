@@ -9,5 +9,6 @@ use Illuminate\Support\Facades\Route;
 }); */
 
 //ruta de tipo VIEW
-Route::view('/','welcome');
-Route::view('/form','formulario');
+Route::view('/','inicio')->name('rutainicio');
+Route::view('/form','formulario')->name('rutaform');
+Route::view('/clientes','clientes')->name('rutaclientes');
