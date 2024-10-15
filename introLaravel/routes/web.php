@@ -12,6 +12,8 @@ Route::get('/clientes', [controladorVistas::class, 'consulta'])->name('rutaclien
 
 Route::view('/component','componentes')->name('rutacomponentes'); 
 
+Route::post('/enviarCliente', [controladorVistas::class, 'procesarCliente'])->name('rutaEnviar');
+
 
 
 
